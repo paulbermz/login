@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensure content stacks vertically */
+    min-height: 100vh; /* Set minimum height to the full viewport height */
+}
+
+.container {
+    width: 980px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 20px; /* Add spacing between container and footer */
+}
+
+.left-section {
+    width: 50%;
+}
+
+.left-section h1 {
+    font-size: 56px; /* Adjusted size to match the image */
+    color: #1877f2;  /* Facebook blue color for the text */
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.2;  /* Line height for better spacing */
+}
+
+.left-section p {
+    font-size: 24px;  /* Adjusted font size to match the paragraph styling in the image */
+    color: #1c1e21;   /* Darker color to match the text in the image */
+    margin-top: 10px;
+    line-height: 1.5; /* Improved line spacing for readability */
+    font-weight: 400; /* Adjusted to normal weight */
+    max-width: 380px; /* Control the width to ensure the text doesn't stretch too wide */
+    margin-bottom: 20px; /* Add some spacing below the paragraph */
+}
+
+.right-section {
+    width: 40%;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box .form-group {
+    position: relative; /* Required for the toggle-password icon */
+    margin-bottom: 10px; /* Spacing between form elements */
+}
+
+.login-box input {
+    width: 100%;
+    padding: 14px 40px 14px 14px; /* Added padding on the right for the icon */
+    margin: 10px 0;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: #1877f2;
+}
+
+.login-box button {
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #1877f2;
+    color: white;
+}
+
+.login-box button:hover {
+    background-color: #2784ff;
+}
+
+.login-box button.create-account {
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 15px;
+    width: 60%;
+    align-self: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button.create-account:hover {
+    background-color: #32921f;
+}
+
+.login-box a {
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.create-page {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.create-page a {
+    color: #1c1e21;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    background-color: white;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Footer Links */
+.footer-links {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin: 0 8px;
+}
+
+.footer-links ul li a {
+    color: #8a8d91;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    margin-top: 10px;
+    font-size: 11px;
+    color: #8a8d91;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.login-box input {
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Eye Icon Style */
+.toggle-password {
+    position: absolute;
+    top: 34%; /* Adjust to align vertically with input */
+    right: 20px; /* Align right within the input field */
+    cursor: pointer;
+    font-size: 12px;
+    color: #888;
+    transform: translateY(-50%); /* Ensure proper centering */
+    z-index: 1; /* Ensure it's above the input field */
+}
+
+.toggle-password:hover {
+    color: #000; /* Change color on hover for visual feedback */
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none; /* Initially hide the error messages */
+}
+
+.input-error {
+    border-color: red;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none; /* Initially hide the error messages */
+}
+
+/* Error border styling for invalid input */
+.input-error {
+    border-color: red !important; /* Ensure the border color is overridden */
+}
+
+/* Red hover effect for invalid input fields */
+.input-error:focus {
+    outline: none;
+    border-color: red;
+    box-shadow: 0 0 3px red;
+}
